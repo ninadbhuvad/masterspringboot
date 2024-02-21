@@ -1,0 +1,10 @@
+build:
+   version: "15091992:215245"
+accounts:
+   message: "Welcome to EazyBank Loans PROD API"
+   contactDetails:
+      name: "Gail Grant"
+      email: "gail@mailinator.com"
+   onCallSupport:
+      - "(022)-10103232"
+      - "(022)-90901212"

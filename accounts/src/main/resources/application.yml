@@ -1,0 +1,59 @@
+server:
+   port: 8080
+   servlet:
+      context-path: /accounts
+      
+spring:
+   application:
+      name: "accounts"
+   datasource:
+      url: jdbc:h2:mem:accounts
+      driverclassName: org.h2.Driver
+      username: sa
+      password: ''
+   h2:
+      console:
+         enabled: true
+         settings:
+            web-allow-others: true
+   jpa:
+      database-platform: org.hibernate.dialect.H2Dialect
+      hibernate:
+         ddl-auto: update
+      show-sql: true
+      properties:
+         hibernate:
+            format_sql: true
+   config:
+      import: "optional:configserver:http://localhost:8071/configserver"
+         
+management:
+   endpoints:
+      web:
+         exposure:
+            include: "*"
+   endpoint:
+      shutdown:
+         enabled: true
+   info:
+      env:
+         enabled: true
+
+endpoints:
+   shutdown:
+      enabled: true
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: "http://localhost:8085/eurekaserver/eureka/"
+      
+info:
+   app:
+      name: "accounts"
+      description: "Eazy Bank Accounts Application"
+      version: "v1"

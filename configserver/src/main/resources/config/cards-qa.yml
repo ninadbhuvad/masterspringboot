@@ -1,0 +1,10 @@
+build:
+   version: "22011963:150545"
+accounts:
+   message: "Welcome to EazyBank Cards QA API"
+   contactDetails:
+      name: "Alicia Hatfield"
+      email: "alicia@mailinator.com"
+   onCallSupport:
+      - "(022)-12123434"
+      - "(022)-56567878"

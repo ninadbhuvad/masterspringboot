@@ -1,0 +1,10 @@
+build:
+   version: "22011963:150545"
+accounts:
+   message: "Welcome to EazyBank Loans QA API"
+   contactDetails:
+      name: "Carla Chung"
+      email: "carla@mailinator.com"
+   onCallSupport:
+      - "(022)-12123434"
+      - "(022)-56567878"

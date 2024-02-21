@@ -1,0 +1,10 @@
+build:
+   version: "18022024:145939"
+accounts:
+   message: "Welcome to EazyBank Cards local API"
+   contactDetails:
+      name: "Johnnie Potter"
+      email: "johnnie@mailinator.com"
+   onCallSupport:
+      - "(022)-98987676"
+      - "(022)-54543232"
